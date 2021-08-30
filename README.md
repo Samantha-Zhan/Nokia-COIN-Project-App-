@@ -1,4 +1,19 @@
-# 云开发 quickstart
+# COIN Nokia Digital Suggestion Box
+
+COIN (Continuous Investment Nokia) was an app development project I independently created during my summer coop at Nokia. It was a task assigned by my manager as an effort to receive constructive feedback from 800+ employees at Nanjing TC site effectively. It was coded with wxml(html)&wxss(css)&Javascript on WeChat App Developer Tool, which is a technology involving a combination of app development and web development supported by WeChat (unfortunately can't be viewed without WeChat, but I have attached small gif demo below). 
+
+## Key Highlights
+> <strong>Compatibility: </strong> <br>
+I choose WeChat Applet for its popularity in my audience (Nanjing site colleagues); they can have access to the app quickly without the need to download (Andriod and IOS compatiable, can also open on laptop). 
+> Respect for user data
+> Good user experience: personallized profile+secure user info, easy login, simplistic design, toasts on each action, feedback function, community area
+> data visualizing
+- User side
+- Administrator side
+> Efficient use of cloud resouce
+As an effort to save backend cloud resource during code refinement phase, I successfully reduce the number of pull request to <strong><em>20%</em></strong> of original by more efficient request handling, cross-page communication, and increase structure of global data.  
+> Progressive update
+> Dry code
 
 这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
 
