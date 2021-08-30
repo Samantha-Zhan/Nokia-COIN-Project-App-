@@ -1,0 +1,180 @@
+
+.top{
+  margin-right: 1.5em;
+  margin-top: 1em;
+  display: flex;
+  text-align: center; 
+}
+.top image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.master{
+  float:top;
+  margin-left: auto;
+  margin-right: 0;
+}
+.userinfo-block-avatar {
+ display:block;
+ margin-left: auto; 
+ margin-right: auto;
+ margin-top: 10%;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px grey;
+}
+
+.userinfo-block-avatar image{
+  width: 100%;
+}
+.nameSubmit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+.userInput{
+  background-color: rgb(128, 128, 128, 0.3);
+  opacity: 0.5;
+  padding: 0.9em;
+  width: 50%;
+  border-radius: 0.5em;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.2em;
+  margin-left: auto;
+}
+.nameSubmit button{
+  margin-left: 0.2em;
+  height:60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+} 
+.profileSubmit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.profileSubmit text{
+  margin-right: 1em;
+}
+.profileSubmit radio{
+  margin-right: 0.5em;
+}
+.note{
+  font-size: x-small;
+  color: grey;
+  text-align: center;
+  padding: 20% 15%;
+}
+.higherNote{
+  padding: 5% 15%;
+}
+.oldUser{
+  font-size: larger;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.selection{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 8%;
+}
+.selection view{
+  margin: 1.5em 0;
+  border: darkgray solid 3rpx;
+  padding: 0.2em;
+  color:#8a8a8a;
+  border-radius: 0.5em;
+}
+
+
+.write::before{
+  content: "";
+  display: inline-block;
+  background: url("https://6e61-nanyanfb-8g1led9mcc2b037d-1301503242.tcb.qcloud.la/icon/write_1.png?sign=39189d8eb3feb551b9853b78d4eb579b&t=1629081284") no-repeat center;
+  background-size:28rpx;
+  width:28rpx;
+  height:28rpx;     
+  margin-right: 0.5em;           
+} 
+.my::before{
+  content: "";
+  display: inline-block;
+  background: url("https://6e61-nanyanfb-8g1led9mcc2b037d-1301503242.tcb.qcloud.la/icon/history_1.png?sign=406f9a43f40adc309e19482400ca88f8&t=1629081341") no-repeat ;
+  background-size:32rpx;
+  width:32rpx;
+  height:32rpx;     
+  background-position-x: center;
+  background-position-y: bottom;
+  margin-right: 0.5em;   
+}
+.community::before{
+  content: "";
+  display: inline-block;
+  background: url("https://6e61-nanyanfb-8g1led9mcc2b037d-1301503242.tcb.qcloud.la/icon/community-line.png?sign=ef85557218ea80d7e62211b21d163511&t=1629081324") no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size:32rpx;
+  width:32rpx;
+  height:32rpx;     
+  margin-right: 0.5em;   
+  bottom: 0;
+}
+.adminCode, .adminIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+.adminCode text{
+  margin-right: 2%;
+}
+.codeSubmit{
+  padding: 0.2em 0.9em;
+  background-color: rgb(128, 128, 128, 0.3);
+  opacity: 0.5;
+  border-radius: 0.5em;
+  width: 25%;
+}
+.adminIcon{
+  text-decoration: underline;
+}
+
+page{
+  width: 100%;
+  height: 100%;
+}
+.background{
+  position: absolute;
+  margin: 0;
+  top: 0;
+  z-index: 2;
+  background-color: var(--themeColor);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  
+}
+
+.front-icon{
+  transform: translateY(-40px);
+  width: 540rpx;
+  height: 319rpx; 
+}
+.img{
+  margin-top: 50%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+}

@@ -1,0 +1,8 @@
+<view class="comp">
+    <image src="{{src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+        
+    </image> 
+    <icon type="clear" size="23" color="var(--themeColor)">
+        
+    </icon>
+</view> 

@@ -1,0 +1,8 @@
+<body>
+  <view class="logs" 
+            wx:for="{{userLog}}"
+            wx:key="_id" 
+            data-index="{{index}}">
+                <log date="{{item.date[0]}}/{{item.date[1]}}/{{item.date[2]}}" log="{{item}}"></log> <!--往component传递数据--> 
+  </view>
+</body>

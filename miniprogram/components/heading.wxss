@@ -1,0 +1,27 @@
+.heading{
+  display: flex;
+  margin-bottom: 0.5em;
+  align-items: center;
+}
+.userinfo-block-avatar {
+  display:block;
+  margin-left: 0; 
+  margin-right: 0.7em;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 5px grey;
+  background-color: white;
+  text-align: center;
+ }
+ .userinfo-block-avatar image{
+   width: 100%;
+ }
+.title{
+  font-size: medium;
+}
+.date{
+  margin-left: auto;
+  margin-right: 0;
+}

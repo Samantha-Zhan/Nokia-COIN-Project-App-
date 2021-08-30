@@ -1,0 +1,9 @@
+<view class="current" bindtap="handleTap">
+  <view class="current-selection" style="color:{{dataObj[dataLst[currentIndex]]}}">{{dataLst[currentIndex]}}</view>
+</view>
+<view wx:if="{{isExpand}}" class="dropDown">
+  <view class="noncurrent" wx:for="{{dataLst}}" wx:key="*this">
+    <view wx:if="{{!(index == currentIndex)&&!(index==dataLst.length-1)}}" class="noncurrent-selection" style="color:{{dataObj[item]}}" catchtap="handleChangeTap" data-index="{{index}}">{{item}}</view>
+    <view class="last" wx:elif="{{!(index == currentIndex)&&index==dataLst.length-1}}" style="color:{{dataObj[item]}}" catchtap="handleChangeTap" data-index="{{index}}">{{item}}</view>
+  </view> 
+</view>

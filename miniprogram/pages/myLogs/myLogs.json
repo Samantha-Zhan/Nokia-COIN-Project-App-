@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "log":"../../components/log"
+  },
+  "navigationBarTitleText": "我的COIN"
+}

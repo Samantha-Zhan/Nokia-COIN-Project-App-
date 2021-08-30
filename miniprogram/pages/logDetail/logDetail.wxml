@@ -1,0 +1,39 @@
+<body>
+  <view class="container">
+    <view class="page-body">
+      <view class="swiperContainer" wx:if="{{containImage}}">
+        <swiper indicator-dots circular>
+          <swiper-item wx:for="{{imgLink}}" wx:key="*this">
+          <view class="imageHolder"><image mode="widthFix" src="{{item}}" bindtap="img_preview" data-url="{{item}}"></image></view>
+        </swiper-item>
+        </swiper>
+      </view>
+       
+      <view class="textContainer">
+        <!-- <view class="large">
+          id: {{logId}}
+        </view> -->
+        <view class="top">
+          <view class="medium">
+          <span style="color: var(--themeColor)">问题类型：</span>{{type}}
+          </view>
+          <!-- <view class="status" style="color:{{statusObj[statusLst[statusIndex]]}}">{{statusLst[statusIndex]}}</view> -->
+          <dropDownSelect wx:if="{{isAdmin}}" class="status" dataLst="{{statusLst}}" dataObj="{{statusObj}}" currentIndex="{{statusIndex}}" bind:onChangeStatus="onChangeStatus"></dropDownSelect>
+          <view wx:else class="status" style="color:{{statusObj[statusLst[statusIndex]]}}">{{statusLst[statusIndex]}}</view>
+        </view> 
+        
+        <view class="title">
+          <view>{{title}}</view>
+        </view>
+        <heading logo="{{logo}}" nickName="{{nickName}}" date="{{date}}"></heading>
+        <view class="small">
+          {{message}} 
+        </view>
+      </view>
+      
+    </view>
+  </view>
+</body>
+
+
+

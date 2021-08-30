@@ -1,0 +1,32 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/feedback/feedback",
+    "pages/login/login",
+    "pages/viewLog/viewLog",
+    "pages/logDetail/logDetail",
+    "pages/chooseLib/chooseLib",
+    "pages/userConsole/userConsole", 
+    "pages/storageConsole/storageConsole",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/myLogs/myLogs",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/testpg/testpg",
+    "pages/setting/setting"
+  ],
+  "window": {
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0d75d2",
+    "navigationBarTitleText": "ShopShop",
+    "navigationBarTextStyle":"white"
+  },
+  "sitemapLocation": "sitemap.json"
+ 
+}

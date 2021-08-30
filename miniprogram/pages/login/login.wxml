@@ -1,0 +1,57 @@
+<view class="background" animation="{{newBackgroundEnd}}" bindtransitionend="animationEnd" hidden="{{isHide}}">
+  <view class="img" animation="{{newIndexShow}}"><image class="front-icon" src="../../images/ContinuousInvestmentNokia.png"></image>
+</view>
+</view>
+<view class="container">
+  <!-- <button type="primary" bindtap="getUserProfile">点击登录</button> -->
+  <view class="top">
+    <view wx:if="{{isSuperAdmin}}" class="master" bindtap="handleSetting">
+      <image src="cloud://nanyanfb-8g1led9mcc2b037d.6e61-nanyanfb-8g1led9mcc2b037d-1301503242/icon/setting.png"></image>
+    </view>
+    <view wx:else style="display: block; height: 50rpx;"><text></text></view>
+  </view>
+      <view class="userinfo-block-avatar" bindtap="bindViewTap">
+            <image src="{{acceptedAvatarUrl}}" mode="widthFix"></image>
+      </view>
+  
+  
+  <form wx:if="{{!oldUser}}" catchsubmit="formSubmit" catchreset="formReset">
+    <view class ="profileSubmit">
+    <text>是否展示头像？</text> 
+    <radio-group bindchange="profileHandler">
+      <label><radio value="true">是</radio></label>
+      <label><radio value="false">否</radio></label>
+    </radio-group>
+    </view>
+    
+   <view class="nameSubmit">
+    <view class="userInput"><input class="weui-input" maxlength="20" name="input" placeholder="小程序显示昵称" /></view>
+    <button type="primary" formType="submit"><icon type="success_no_circle" color="white"></icon></button>
+    </view>
+
+    <view wx:if="{{isExpand}}" class="adminCode">
+      <text>识别码[仅供管理员注册]:</text>
+      <view class="codeSubmit">
+        <input type="text" name="key" class="codeInput" value="{{keyInput}}" bindinput="handleKeyInput"></input>
+      </view>
+    </view>
+    <view wx:else class="adminIcon" bindtap="handleCode">
+      注册为管理员?
+    </view>
+  </form>
+
+
+  <view wx:else >
+    <view class="oldUser">
+      <view>Welcome，{{userPrefName}} <text wx:if="{{isAdmin}}" style="color:var(--themeColor)">\n[管理员]</text><text wx:if="{{isSuperAdmin}}"  style="color:#D4AF37">\n[超级管理员]</text></view>
+      <view class="selection">
+        <view class="write" bindtap="handleWrite">新建COIN</view>
+        <view class="my" bindtap="handleMy">我的COIN</view>
+        <view class="community" bindtap="handleCommunity">所有COIN</view>
+      </view>
+       
+    </view>
+    
+  </view>
+  <view class="note {{oldUser?'higherNote':''}}"><text>**我们尊重您希望在COIN意见箱上对个人信息的公开度，并仅存储您录入的信息。</text></view>
+</view>

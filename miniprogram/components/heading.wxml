@@ -1,0 +1,8 @@
+<view class="heading">
+      <text decode="true">By&nbsp;&nbsp;&nbsp;</text>
+      <view class="userinfo-block-avatar">
+        <image src="{{logo}}" mode="widthFix"></image>
+      </view>
+      <view class="title"><p>{{nickName}}</p></view>
+      <view class="date">  于 {{date}} 发布</view> 
+</view>

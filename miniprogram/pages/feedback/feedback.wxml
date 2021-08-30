@@ -1,0 +1,40 @@
+<view class="fb_main" >
+    <view class="sub_head">
+        问题种类
+    </view>
+    <view class="cats">
+        <text bindtap="itemTapHandler" class="topics {{index===currentTopicIndex?'active':''}}" 
+        wx:for="{{topic}}" wx:key="id" data-index="{{index}}">{{item}}</text>
+    </view>
+    <view class="fb_content">
+        <view class="title">
+            <input class="input" type="text" placeholder="标题" bindinput="handleInputInput" value="{{title}}"></input>
+        </view>
+        <view class="content">
+            <textarea class="textarea" placeholder="请描述一下您的问题" bindinput="handleTextInput" value="{{textarea_content}}" maxlength="-1"></textarea> 
+        
+            <view class="fb_tool">
+                <button class="add" bindtap="handleChooseImg">+</button> 
+                <view class="UpImgItems" 
+                wx:for="{{chooseImages}}"
+                wx:key="*this" 
+                bindtap="handleRemoveImg"
+                data-index="{{index}}">
+                    <UpImg src="{{item}}"></UpImg> <!--往component传递数据-->
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="form_btn">
+        <button type="warn" class="mainBtn" bindtap="handleFormSubmit">
+            <icon type="success_no_circle" size="20" color="white">
+            </icon>
+            提交  
+        </button>
+    </view>
+    
+</view>
+
+<view>
+    
+</view>

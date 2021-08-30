@@ -1,0 +1,93 @@
+page {
+  background-color: #eeee;
+
+}
+view.fb_main {
+  padding: 40rpx;
+  color: #666;
+}
+view.fb_main view.cats {
+  display: flex;
+  flex-wrap: wrap;
+}
+view.fb_main view.cats .topics {
+  color: grey;
+  width: 30%;
+  padding: 15rpx;
+  text-align: center;
+  margin: 20rpx 20rpx 20rpx 0rpx;
+  
+  background-color: white;
+}
+view.fb_main view.cats .active {
+  color: white;
+  font-weight: 550;
+  background-color: grey;
+}
+fb_content textarea{
+  margin-bottom: 1em;
+}
+.fb_tool{
+  margin-top: 1em;
+}
+view.fb_main view.fb_content {
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+}
+.content{
+  background-color: white;
+  padding: 10rpx;
+  margin-bottom: 1em;
+}
+.title{
+  background-color: white;
+  padding: 7rpx 10rpx ;
+  margin-bottom: 1em;
+}
+view.fb_main view.fb_content textarea {
+  padding: 10rpx;
+  width: 95%;
+}
+.input{
+  padding: 10rpx;
+  width: 95%;
+}
+view.fb_main view.fb_content view.fb_tool {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10rpx;
+}
+view.fb_main view.fb_content view.fb_tool button {
+  margin: 0;
+  width: 90rpx;
+  height: 90rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-left: 20rpx;
+  color: grey;
+}
+view.fb_main view.fb_content view.fb_tool .UpImgItems {
+  margin: 0 20rpx 0 20rpx;
+}
+view.fb_main .form_btn {
+  margin-top: 25rpx;
+}
+view.fb_main .form_btn button {
+  width: 200rpx;
+  margin-top: 1.5em;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 20rpx;
+  justify-content: center;
+}
+view.fb_main .form_btn .mainBtn {
+  background-color: var(--themeColor);
+  font-size: 28rpx;
+  font-weight: 550;
+}
+
+

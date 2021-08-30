@@ -1,0 +1,31 @@
+.current, .dropDown{
+  border: 1rpx solid #ddd;
+  border-radius: 0.5em;
+  margin-bottom: 0.2em;
+  padding: 0.25em 1em;
+  background-color: white;
+}
+.dropDown{
+  padding: 0;
+  position: absolute;
+}
+.noncurrent-selection{
+  border-bottom: 1rpx solid rgb(216, 216, 216);
+}
+.noncurrent-selection, .last{
+  padding: 0.25em 1em;
+}
+
+.current-selection{
+  position: relative;
+  width: 100%;
+}
+.current-selection::after{
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10rpx solid transparent;
+  border-top: 10rpx solid #999;
+}

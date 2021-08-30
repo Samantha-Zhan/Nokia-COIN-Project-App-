@@ -1,0 +1,8 @@
+<!--components/type.wxml-->
+<view class="comp">
+  <view class="text">
+    <text>{{index+1}}. {{content}}</text>
+  </view>
+  <icon type="clear" size="15" color="white"></icon>
+
+</view>

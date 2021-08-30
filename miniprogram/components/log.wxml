@@ -1,0 +1,25 @@
+
+<view class="listview" bindtap="clickHandler">
+  <view class="left">
+    <image class="icon" src="{{imgs.length!=0?log.imgs[0]:''}}"></image>
+  </view>
+  <view class="right">
+    <view class="type"><span class="subtitle">问题类型: </span>{{log.topic}}</view>
+    <view class="main-title">{{log.title}}</view>
+    <view class="heading">
+      <view class="userinfo-block-avatar">
+        <image src="{{log.icon}}" mode="widthFix"></image>
+      </view>
+      <view class="title"><p>{{log.nickName}}</p></view>
+    </view>
+    <view class="content" style="color:darkgray;">{{log.shortMes}}</view>
+    <view class="bottom">
+      <view class="date">{{date}}</view>
+      <view wx:if="{{message === ''}}" style="color:{{log.statusObj[log.txtStatus]}}" class="status">{{log.txtStatus}}</view>
+      <view wx:else style="color:{{log.statusObj[message]}}" class="status">{{message}}</view>
+    </view>
+    
+  </view>
+</view>
+
+

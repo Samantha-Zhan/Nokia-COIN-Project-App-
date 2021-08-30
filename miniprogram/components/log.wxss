@@ -1,0 +1,93 @@
+body{
+  background-color: lightgrey;
+}
+p{
+  word-break: break-all;
+}
+.listview{
+  margin: 0.9em 0.5em;
+  box-shadow: 0 0 10px grey;
+  border-color: lightgray;
+  height: auto;
+  padding: 1em 1em;
+  display: flex;
+}
+
+.hoverList{
+  background-color: lightgray;
+}
+
+.left{
+  float:left;
+  width: 250rpx;
+  margin-right: 30rpx;
+}
+.icon{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5em;
+  background-color: lightgray;
+}
+.right{
+  width: 70%;
+  padding-left: 0.5em;
+  height: 100%;
+  float: right;
+  margin-right: 0.5em;
+  
+}
+.heading{
+  display: flex;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  align-items: center;
+}
+.userinfo-block-avatar {
+  display:block;
+  margin-left: 0; 
+  margin-right: 0.7em;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 5px grey;
+  background-color: white;
+ }
+ .userinfo-block-avatar image{
+   width: 100%;
+ }
+.title{
+  color: darkgray;
+  font-weight: bolder;
+}
+.type{
+  font-weight: bolder;
+  margin-bottom: 0.5em;
+}
+.type .subtitle{
+  color:var(--themeColor);
+}
+.type .content{
+  color: darkgray;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  height: 2rpx;
+  margin-bottom:1em;
+}
+.main-title{
+  color: black;
+  font-size: 40rpx;
+}
+.date{
+  
+  color:darkgray
+}
+.bottom{
+  display: flex;
+  margin-top: 0.5em;
+}
+.status{
+  margin-left: auto;
+  margin-right: 0;
+}

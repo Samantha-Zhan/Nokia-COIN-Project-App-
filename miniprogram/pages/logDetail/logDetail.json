@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "heading":"../../components/heading",
+    "dropDownSelect":"../../components/dropDownSelect"
+  },
+  "navigationBarTitleText": "问题id"
+}

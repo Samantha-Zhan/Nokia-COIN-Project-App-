@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "UpImg":"../../components/UpImg" 
+  },
+  "navigationBarTitleText": "新建COIN"
+}
