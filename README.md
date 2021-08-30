@@ -1,17 +1,26 @@
 # COIN Nokia Digital Suggestion Box
 
-COIN (Continuous Investment Nokia) was an app development project I independently created during my summer coop at Nokia. It was a task assigned by my manager as an effort to receive constructive feedback from 800+ employees at Nanjing TC site effectively. It was coded with wxml(html)&wxss(css)&Javascript on WeChat App Developer Tool, which is a technology involving a combination of app development and web development supported by WeChat (unfortunately can't be viewed without WeChat, but I have attached small gif demo below). 
+COIN (Continuous Investment Nokia) was a cloud-based app development project I independently created during my summer coop at Nokia. It was a task assigned by my manager as an effort to receive constructive feedback from 800+ employees at Nanjing TC site effectively. It was coded with wxml(html)&wxss(css)&Javascript on WeChat App Developer Tool, which is a technology involving a combination of app development and web development supported by WeChat (unfortunately can't be viewed without WeChat, but I have attached small gif demo below). 
+
+#### `Frontend`: WeChat Developer Tool (wxml(html) & wxss(css) & Javascript) 
+#### `Backend`: WeChat Cloud Development Tool (WeChat cloud API, cloud function, JSON based could storage)
+#### <text style="line-height: 10em;">`Main Features`: 
+  :heavy_check_mark:feedback submition (text+image supported),    :heavy_check_mark:user feedbacks,    :heavy_check_mark:community feedbacks,    :heavy_check_mark:user login,    :heavy_check_mark:3 user modes (***user*** / ***administrator*** *<=update feedback process status* / ***super administrator*** *<= visualized app configuration setting*)... and more!!</text>
+
 
 ## Key Highlights
 > <strong>Compatibility: </strong> <br>
-I choose WeChat Applet for its popularity in my audience (Nanjing site colleagues); they can have access to the app quickly without the need to download (Andriod and IOS compatiable, can also open on laptop). 
+I choose WeChat Applet for its popularity in my audience (Nanjing site colleagues); they can have access to the app quickly without the need to download <strong>(Andriod and IOS compatiable, can also open on laptop)</strong>. 
+
+> <strong>Efficient use of cloud resouce:</strong> <br>
+As an effort to save backend cloud resource during code refinement phase, I successfully reduce the number of storage read requests to <strong><em>20%</em></strong> of original by more efficient request handling, cross-page communication, and increased global data structure.  
+
 > Respect for user data
 > Good user experience: personallized profile+secure user info, easy login, simplistic design, toasts on each action, feedback function, community area
 > data visualizing
 - User side
 - Administrator side
-> Efficient use of cloud resouce
-As an effort to save backend cloud resource during code refinement phase, I successfully reduce the number of pull request to <strong><em>20%</em></strong> of original by more efficient request handling, cross-page communication, and increase structure of global data.  
+
 > Progressive update
 > Dry code
 
