@@ -1,11 +1,11 @@
-# COIN Nokia Digital Suggestion Box
+# :mailbox_with_mail:COIN Nokia Digital Suggestion Box 
+<img align="right" width="100" height="100" src="https://github.com/Samantha-Zhan/Nokia-COIN-Project-App-/blob/main/COINlogo%5Bmedium%5D.png">
+<strong>COIN (Continuous Investment Nokia)</strong> was a cloud-based app development project I independently created during my summer coop at Nokia. It was a task assigned by my manager as an effort to receive constructive feedback from 800+ employees at Nanjing TC site effectively. It was coded with <strong><em>wxml</strong></em>(html) & <strong><em>wxss</strong></em>(css) & <strong><em>Javascript</strong></em> on WeChat App Developer Tool, which is a technology involving a combination of app development and web development supported by WeChat (unfortunately can't be viewed without WeChat, but I have attached small gif demo below). 
 
-COIN (Continuous Investment Nokia) was a cloud-based app development project I independently created during my summer coop at Nokia. It was a task assigned by my manager as an effort to receive constructive feedback from 800+ employees at Nanjing TC site effectively. It was coded with wxml(html)&wxss(css)&Javascript on WeChat App Developer Tool, which is a technology involving a combination of app development and web development supported by WeChat (unfortunately can't be viewed without WeChat, but I have attached small gif demo below). 
 
 #### `Frontend`: WeChat Developer Tool (wxml(html) & wxss(css) & Javascript) 
 #### `Backend`: WeChat Cloud Development Tool (WeChat cloud API, cloud function, JSON based could storage)
-#### <text style="line-height: 10em;">`Main Features`: 
-  :heavy_check_mark:feedback submition (text+image supported),    :heavy_check_mark:user feedbacks,    :heavy_check_mark:community feedbacks,    :heavy_check_mark:user login,    :heavy_check_mark:3 user modes (***user*** / ***administrator*** *<=update feedback process status* / ***super administrator*** *<= visualized app configuration setting*)... and more!!</text>
+#### <text style="line-height: 10em;">`Main Features`: :heavy_check_mark:feedback submition (text+image supported),    :heavy_check_mark:user feedbacks,    :heavy_check_mark:community feedbacks,    :heavy_check_mark:user login,    :heavy_check_mark:3 user modes (***user*** / ***administrator*** *<=update feedback process status* / ***super administrator*** *<= visualized app configuration setting*)... and more!!</text>
 
 
 ## Key Highlights
@@ -14,6 +14,9 @@ I choose WeChat Applet for its popularity in my audience (Nanjing site colleague
 
 > <strong>Efficient use of cloud resouce:</strong> <br>
 As an effort to save backend cloud resource during code refinement phase, I successfully reduce the number of storage read requests to <strong><em>20%</em></strong> of original by more efficient request handling, cross-page communication, and increased global data structure.  
+
+> <strong>Drier code with component and cloud function:</strong><br>
+I extract parts of the app and implement these as components for repeated use to reduce development time and catch bugs easier. For example: list view, detail view of log, user avatar/name display... Moreover, I use cloud function to handle backend database read/write to reduce repetition.
 
 > Respect for user data
 > Good user experience: personallized profile+secure user info, easy login, simplistic design, toasts on each action, feedback function, community area
