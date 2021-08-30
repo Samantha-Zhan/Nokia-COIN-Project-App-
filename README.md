@@ -22,25 +22,16 @@ I extracted parts of the app and implement these as components for repeated use 
 **easy login** tied to WeChat account, no need for log in after initial sign in and use users' unique openid as identifier; as a suggestion box, it allows **personalized avatar/nickname** at sign in protect user privacy; added **comprehensible prompt/toasts** for user actions (e.g. form submit success/failure at login, feedback, setting); included **community area** to view all feedbacks from other colleagues.
 
 > <strong>Customized Server-Side Datatable Visualizer:</strong> <br>
-I designed a very simple workaround for server-side data alteration for administrator by adding administrator code at log in and created add-ons/pages for identified administrator after login, so that they can review/change status of submitted suggestions, change feedback form categories, change administrator code, and add/remove administrators.
-The app acheive cloud server alteration to be used for administrators
+I designed a very simple workaround for **server-side data alteration for administrator** by adding administrator code at log in and created add-ons/pages for identified administrator after login, so that they can review/change status of submitted suggestions, change feedback form categories, change administrator code, and add/remove administrators.
 
-> Respect for user data
-> Good user experience: personallized profile+secure user info, easy login, simplistic design, toasts on each action, feedback function, community area
-> data visualizing
-- User side
-- Administrator side
+Launch Page (as normal user)             |  Sign Up (as administrator)  |  Submit Feedback (text & image supported)
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/40647818/131355041-f464b44c-7fa6-483c-a814-4fe91306b3a3.gif" width="236.8" height="512"> |  <img src="https://user-images.githubusercontent.com/40647818/131355237-9d547116-f986-45b5-9f8e-d5e99d54e8ab.gif" width="236.8" height="512">  |  <img src="https://user-images.githubusercontent.com/40647818/131355434-dc0a9f5c-c8e6-4910-be32-76257c4fa046.gif" width="236.8" height="512">
 
-> Progressive update
-> Dry code
+View All Feedback (my feedback + all feedback page)             |  View Feedback Detail With Image |  View Feedback Detail Without Image
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/40647818/131356551-86d3e041-111c-451f-8f1c-e2b99fec925f.gif" width="236.8" height="512"> |  <img src="https://user-images.githubusercontent.com/40647818/131356619-825958cb-ca4e-4cf6-94b4-da81690dadbf.gif" width="236.8" height="512">  |  <img src="https://user-images.githubusercontent.com/40647818/131356346-f48650b6-fc02-4064-819e-b01447bfdef5.gif" width="236.8" height="512">
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
-
-## 参考文档
-
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
+![logDetailgif](https://user-images.githubusercontent.com/40647818/131356619-825958cb-ca4e-4cf6-94b4-da81690dadbf.gif)
 
