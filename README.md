@@ -19,7 +19,11 @@ As an effort to save backend cloud resource during code refinement phase, I succ
 I extracted parts of the app and implement these as components for repeated use to **reduce development time** and **catch bugs easier**. For example: list view, detail view of log, user avatar/name display... Moreover, I use cloud function to handle backend database read/write to reduce repetition.
 
 > <strong>Good user experience:</strong> <br>
-**easy login** tied to WeChat account, no need for log in after initial sign in and use users' unique openid as identifier; as a suggestion box, I designed the app with **personalized avatar/nickname** at sign in to respect users' expected info exposure; added comprehensible prompt/toasts for user actions (e.g. form submit success/failure at login, feedback, setting); included **community area** to view all feedbacks from other colleagues.
+**easy login** tied to WeChat account, no need for log in after initial sign in and use users' unique openid as identifier; as a suggestion box, it allows **personalized avatar/nickname** at sign in protect user privacy; added **comprehensible prompt/toasts** for user actions (e.g. form submit success/failure at login, feedback, setting); included **community area** to view all feedbacks from other colleagues.
+
+> <strong>Customized Server-Side Datatable Visualizer:</strong> <br>
+I designed a very simple workaround for server-side data alteration for administrator by adding administrator code at log in and created add-ons/pages for identified administrator after login, so that they can review/change status of submitted suggestions, change feedback form categories, change administrator code, and add/remove administrators.
+The app acheive cloud server alteration to be used for administrators
 
 > Respect for user data
 > Good user experience: personallized profile+secure user info, easy login, simplistic design, toasts on each action, feedback function, community area
