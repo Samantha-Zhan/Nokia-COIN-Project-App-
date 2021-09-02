@@ -21,10 +21,10 @@ I extracted parts of the app and implement these as components for repeated use 
 > :small_blue_diamond:  <strong>Good user experience:</strong> <br>
 **Easy login** tied to WeChat account, no need for login after initial sign up and use users' unique OpenID as an identifier. In addition, as a suggestion box, it allows **personalized avatar/nickname** at sign up to protect user privacy. Moreover, I added **comprehensible prompt/toasts** for user actions (e.g. form submit success/failure at login, feedback, setting). The **community area** is also included to view all feedback from other colleagues.<br><br>
 
-Launch Page (as normal user)             |  Sign Up (as administrator)  |  Submit Feedback (text & image supported)
+Launch Page (as normal user)             |  Sign Up (as administrator)  |  Submit Feedback
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://user-images.githubusercontent.com/40647818/131355041-f464b44c-7fa6-483c-a814-4fe91306b3a3.gif" width="236.8" height="512"> |  <img src="https://user-images.githubusercontent.com/40647818/131355237-9d547116-f986-45b5-9f8e-d5e99d54e8ab.gif" width="236.8" height="512">  |  <img src="https://user-images.githubusercontent.com/40647818/131355434-dc0a9f5c-c8e6-4910-be32-76257c4fa046.gif" width="236.8" height="512">
-View All Feedback (my feedback + all feedback)     |    View Feedback Detail With Image |  View Feedback Detail Without Image
+View All Feedback     |    View Feedback Detail With Image |  View Feedback Detail Without Image
 <img src="https://user-images.githubusercontent.com/40647818/131356551-86d3e041-111c-451f-8f1c-e2b99fec925f.gif" width="236.8" height="512"> |  <img src="https://user-images.githubusercontent.com/40647818/131356619-825958cb-ca4e-4cf6-94b4-da81690dadbf.gif" width="236.8" height="512">  |  <img src="https://user-images.githubusercontent.com/40647818/131356346-f48650b6-fc02-4064-819e-b01447bfdef5.gif" width="236.8" height="512">
 <br>
 > :small_blue_diamond:  <strong>Customized Server-Side Datatable Visualizer:</strong> <br>
